@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srivarun Reddy Vanga | Associate Engineer</title>
+
+<style>
+
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#0f172a;
+    color:#f8fafc;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+    position:sticky;
+    top:0;
+    width:100%;
+    background:#111827;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.4);
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    padding:18px;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #38bdf8;
+    margin-bottom:25px;
+    box-shadow:0 0 25px rgba(56,189,248,.3);
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    color:#38bdf8;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.hero p{
+    color:#cbd5e1;
+    max-width:750px;
+    margin:auto;
+}
+
+.btn-group{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    margin:10px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+    font-weight:600;
+}
+
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
+    background:#1d4ed8;
+}
+
+.secondary{
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+}
+
+.secondary:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    color:#38bdf8;
+    font-size:2.2rem;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+/* ===========================
+   EXPERIENCE
+=========================== */
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   EDUCATION
+=========================== */
+
+.education-grid{
+    display:grid;
+    gap:20px;
+}
+
+/* ===========================
+   CERTIFICATIONS
+=========================== */
+
+.certifications ul{
+    list-style:none;
+}
+
+.certifications li{
+    padding:12px;
+    border-bottom:1px solid #334155;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.socials{
+    margin-top:20px;
+}
+
+.socials a{
+    margin:0 10px;
+    font-size:1.1rem;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.4rem;
+}
+
+.hero h2{
+    font-size:1rem;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.profile-pic{
+    width:170px;
+    height:170px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#certifications">Certifications</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="assets/images/profile_pic.jpg"
+alt="Srivarun Reddy Vanga"
+class="profile-pic">
+
+<h1>Srivarun Reddy Vanga</h1>
+
+<h2>
+Associate Engineer | Intel Wi-Fi System Debugging |
+Hardware & Semiconductor Engineer
+</h2>
+
+<p>
+Electronics and Communication Engineer with a strong foundation in VLSI, Embedded Systems,
+Digital Design and Semiconductor Technologies. Currently working on Intel Wi-Fi system
+debugging through LTTS while continuously expanding expertise in hardware engineering,
+wireless technologies and RTL design.
+</p>
+
+<div class="btn-group">
+<a href="assets/resume.pdf" class="btn primary">Download Resume</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="card">
+<p>
+I am an Electronics and Communication Engineer passionate about semiconductor technologies,
+wireless communication systems, hardware debugging and digital design.
+
+My journey includes a Diploma in Mechatronics & Smart Factory from NTTF, an International
+Diploma from NOCN (UK), and a B.Tech in Electronics & Communication Engineering (VLSI)
+from KL University.
+
+Currently contributing to Intel Wi-Fi system debugging activities through LTTS, gaining
+exposure to platform-level debugging, issue analysis and hardware-software interactions.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="card">
+<h3>Associate Engineer</h3>
+<p><strong>LTTS</strong> | 2025 - Present</p>
+
+<ul>
+<li>Working on Intel Wi-Fi system debugging activities.</li>
+<li>Investigating platform-level issues and failures.</li>
+<li>Analyzing logs and debugging information.</li>
+<li>Supporting issue reproduction and root cause analysis.</li>
+<li>Collaborating with engineering teams.</li>
+<li>Working with wireless connectivity systems.</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+<div class="container">
+
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="card">
+<h3>Semiconductor & VLSI</h3>
+<p>
+RTL Design<br>
+Verilog HDL<br>
+Digital Electronics<br>
+FPGA Fundamentals
+</p>
+</div>
+
+<div class="card">
+<h3>Wireless Systems</h3>
+<p>
+Wi-Fi Systems<br>
+System Debugging<br>
+Log Analysis<br>
+Issue Investigation
+</p>
+</div>
+
+<div class="card">
+<h3>Programming</h3>
+<p>
+C Language<br>
+Embedded C<br>
+Verilog HDL<br>
+Python (Basic)
+</p>
+</div>
+
+<div class="card">
+<h3>Tools</h3>
+<p>
+Linux<br>
+Git<br>
+MATLAB<br>
+Cadence<br>
+Vivado<br>
+MPLAB
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>KL-SAT Balloon Satellite</h3>
+<p>
+Contributed to an experimental balloon satellite initiative involving communication
+and embedded electronics systems.
+</p>
+</div>
+
+<div class="project-card">
+<h3>RISC-V Processor Design</h3>
+<p>
+Designed and simulated processor modules using Verilog HDL and digital design concepts.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Verilog Learning Portal</h3>
+<p>
+Developed a learning platform explaining Verilog HDL concepts and digital design fundamentals.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+<div class="container">
+
+<h2 class="section-title">Education</h2>
+
+<div class="education-grid">
+
+<div class="card">
+<h3>B.Tech – Electronics & Communication Engineering (VLSI)</h3>
+<p>KL University | 2022 – 2025</p>
+<p>CGPA: 9.0</p>
+</div>
+
+<div class="card">
+<h3>Diploma – Mechatronics & Smart Factory</h3>
+<p>NTTF | 2019 – 2022</p>
+<p>CGPA: 8.7</p>
+</div>
+
+<div class="card">
+<h3>International Diploma</h3>
+<p>NOCN – United Kingdom</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+<div class="container certifications">
+
+<h2 class="section-title">Certifications</h2>
+
+<div class="card">
+<ul>
+<li>SystemVerilog & UVM – Tessolve</li>
+<li>VLSI Design & Verification – Tessolve</li>
+<li>Embedded Systems & IoT Programming – Tessolve</li>
+<li>Artificial Intelligence Fundamentals</li>
+<li>Industrial Automation & Smart Factory – NTTF</li>
+<li>NOCN International Diploma</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+<div class="container contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Email:</strong> srivarunreddyv@gmail.com</p>
+<p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
+
+<div class="socials">
+<a href="https://www.linkedin.com/in/srivarun-reddy/">LinkedIn</a>
+<a href="https://github.com/varunreddyvanga">GitHub</a>
+<a href="https://www.instagram.com/srivarun_reddy_v/">Instagram</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Srivarun Reddy Vanga | Portfolio Website
+</footer>
+
+</body>
+</html>
